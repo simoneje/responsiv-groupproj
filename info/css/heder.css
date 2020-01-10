@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0; 
+  list-style: none;   
+  text-decoration: none;
   box-sizing: border-box; 
   font-family: Arial, Helvetica, sans-serif;
   color: black;
@@ -55,7 +57,9 @@
     text-decoration: none;
 }
 .desktopMeny {
-    background-color: #66ff66;
+    background-image: linear-gradient(to bottom, 
+    #ccffcc,
+    #66ff66);
 }
 .menyLi a:hover {
     background-color: white;
