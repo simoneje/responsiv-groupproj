@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.banderoll {
+    color: black;
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.huvud {
+    border: 5px solid #66ff66;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.rubrik {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+.huvudLoga img {
+    width: 15rem;
+    height: 5rem;
+    padding-top: 5px;
+}
+.köp {
+    font-size: 3rem;
+    padding-right: 50px;
+    padding-top: 15px;
+    color: #009b40;
+}
+.menyUl {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menyLi {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 15px;
+}
+.menyLi a {
+    display: block;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+}
+.desktopMeny {
+    background-color: #66ff66;
+}
+.menyLi a:hover {
+    background-color: white;
+    color: black;
+}
+.mobNav {
+    display: none;
+}
+label {
+    padding-right: 2rem;
+    font-size: 3rem;
+    display: none;
+}
+#toggel {
+    display: none;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:768px) {
+     nav.mMeny, .desktopMeny, .köp, .banderoll {
+        display: none;
+     }
+    .mobNav {
+        display: contents;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .mobNav img {
+        width: 20rem;
+        height: 7rem;
+        margin-left: 3%;
+        margin-right: 6%;
+        display: flex;  
+    }
+    label {
+
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        background-image: linear-gradient(to bottom, 
+        #99ff99,
+        #66ff66);
+        width: 100%;
+
+
+    }
+    .mMeny {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: #66ff66;
+        font-size: 1.5rem;
+    }
+    .mMeny a {
+        display: block;
+        border-bottom: solid 2px black;
+        padding-top: 10px;
+        text-decoration: none;
+    }
+    .mMeny a:hover {
+        background-color: #009b40;
+    }
+    #toggel:checked + .mMeny {
+        display: block;
+    }
+}
