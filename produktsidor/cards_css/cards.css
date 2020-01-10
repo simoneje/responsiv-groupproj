@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+section{
+    padding: 10rem 0;
+    background-color: #ffffff;
+}
+
+.card-wrapper
+{
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card
+{
+    width: 32rem;
+    background:#ccffcc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgb(0, 0, 0, 0.2);
+}
+
+.card .card-img
+{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+}
+
+.card h1
+{
+    font-size: 2.5rem;
+    color: #333333;
+    margin: 1.5rem 0;
+}
+
+.information
+{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333333;
+}
+
+.card .knapp
+{
+    padding: 1rem 2.5rem;
+    background-color: #333333;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+
+.card .knapp:hover
+{
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: .5rem .5rem 2rem rgb(0, 0, 0, 0.2);
+}
+
+.card .knapp:active
+{
+    box-shadow: none;
+}
+
+@media (min-width: 768px)
+{
+    .card-wrapper
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 2rem;
+    }
+}
+
+

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0; 
+  list-style: none;   
+  text-decoration: none;
+  box-sizing: border-box; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banderoll {
+    color: black;
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.huvud {
+    border: 5px solid #66ff66;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.rubrik {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+.huvudLoga img {
+    width: 15rem;
+    height: 5rem;
+    padding-top: 5px;
+}
+.buy {
+    font-size: 3rem;
+    padding-right: 50px;
+    padding-top: 15px;
+    color: #009b40;
+}
+.menyUl {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menyLi {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 15px;
+}
+.menyLi a {
+    display: block;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.desktopMeny {
+    background-image: linear-gradient(to bottom, 
+    #ccffcc,
+    #66ff66);
+
+}
+.menyLi a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:768px)
+{
+    .banderoll
+    {
+        display: none;
+    }
+
+    .desktopMeny
+    {
+        display: none;
+    }
+}
+
